@@ -28,4 +28,4 @@ jobs:
         env:
           HOPSWORKS_API_KEY: ${{ secrets.HOPSWORKS_API_KEY }}
         run: |
-          python pipelines/daily_pipeline.py
+          python 01_write_feature_groups.py
