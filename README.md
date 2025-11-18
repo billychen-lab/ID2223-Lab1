@@ -21,7 +21,7 @@ The system is built around the **Hopsworks Feature Store** and consists of:
 3. A **batch inference & evaluation pipeline** that produces:
    - 14-day **hindcast** plots (prediction vs. ground truth); MAE values in the plots mean the average prediction error in the area of this sensor with the unit µg/m³ in these 14 days.
    - 7-day **forecast** plots starting from “today”
-   - CSV files with predictions and (when available) true values, the lines 2-15 of the predictions csv files are predictions and real values of PM2.5 of the sensor in last 14 days, the lines 16-22 are predictions of the sensor in the next 7 days, which are also shown in the plots.
+   - CSV files with predictions and (when available) true values, the lines 2-15 of the predictions csv files are predictions and real values of PM2.5 of the sensor in last 14 days, the lines 16-22 are predictions of the sensor in the next 7 days, which are also shown in the plots. The results of MAE show that our models' prediction accuracy is good.
 4. A **lag-feature experiment** comparing the baseline weather-only model against weather+lagged PM2.5.
 5. A static **multi-page dashboard** that visualizes all Hong Kong station sensors we have selected.
 
