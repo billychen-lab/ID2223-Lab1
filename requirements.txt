@@ -1,5 +1,4 @@
-hopsworks==4.2.*
-pyarrow
+hopsworks[python]
 pandas
 numpy
 requests
