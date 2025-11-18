@@ -24,6 +24,7 @@ The system is built around the **Hopsworks Feature Store** and consists of:
    - CSV files with predictions and (when available) true values, the lines 2-15 of the predictions csv files are predictions and real values of PM2.5 of the sensor in last 14 days, the lines 16-22 are predictions of the sensor in the next 7 days, which are also shown in the plots. 
 4. A **lag-feature experiment** comparing the baseline weather-only model against weather+lagged PM2.5.
 5. A static **multi-page dashboard** that visualizes all Hong Kong station sensors we have selected.
+6. Regarding the Training and Prediction of Models：We downloaded the air quality data CSV of these sites from the official website and sorted them in chronological order. Then we take the first 80% of the data to train the models, and the remaining 20% of the data to evaluate the prediction accuracy of the model.
 
 The implementation covers Lab 1 tasks for **grades E, C and A**. (covers the requirements for grade A)
 
