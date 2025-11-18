@@ -12,7 +12,7 @@
 
 ## 1. Overview
 
-This project implements an end-to-end serverless machine-learning system that predicts daily PM2.5 for several air-quality sensors in a region of **Hong Kong** for the next 7 days.
+This project implements an end-to-end serverless machine-learning system that predicts daily PM2.5 for several air-quality sensors in a region of **Hong Kong** for the next 7 days. We did not use the code provided in the notebook, but designed our own codes according to the lab requirements and prompts, achieving the functionality required for the lab.
 
 The system is built around the **Hopsworks Feature Store** and consists of:
 
