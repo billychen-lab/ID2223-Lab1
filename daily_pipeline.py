@@ -117,6 +117,7 @@ def main():
         primary_key=["station_id"],
         event_time="date",
         description="Daily weather + future forecasts"
+        online_enabled=False
     )
 
     aq_fg = fs.get_or_create_feature_group(
@@ -125,6 +126,7 @@ def main():
         primary_key=["station_id"],
         event_time="date",
         description="Daily PM2.5 observations"
+        online_enabled=False
     )
 
     weather_fg.insert(weather_df_all, write_options={"wait_for_job": True})
