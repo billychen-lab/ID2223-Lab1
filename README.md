@@ -12,7 +12,7 @@
 
 ## 1. Overview
 
-This project implements an end-to-end serverless machine-learning system that predicts daily PM2.5 for several air-quality sensors in **Hong Kong** for the next 7 days.
+This project implements an end-to-end serverless machine-learning system that predicts daily PM2.5 for several air-quality sensors in a region of **Hong Kong** for the next 7 days.
 
 The system is built around the **Hopsworks Feature Store** and consists of:
 
@@ -21,7 +21,7 @@ The system is built around the **Hopsworks Feature Store** and consists of:
 3. A **batch inference & evaluation pipeline** that produces:
    - 14-day **hindcast** plots (prediction vs. ground truth)
    - 7-day **forecast** plots starting from “today”
-   - CSV files with predictions and (when available) true values
+   - CSV files with predictions and (when available) true values, the lines 2~15 of the predictions csv files are predictions and real values of PM2.5 of the sensor in last 14 days, the lines 16~22 are predictions of the sensor in the next 7 days, which are also shown in the plots.
 4. A **lag-feature experiment** comparing the baseline weather-only model against weather+lagged PM2.5.
 5. A static **multi-page dashboard** that visualizes all Hong Kong stations.
 
