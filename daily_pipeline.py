@@ -116,7 +116,7 @@ def main():
         version=1,
         primary_key=["station_id"],
         event_time="date",
-        description="Daily weather + future forecasts"
+        description="Daily weather + future forecasts",
         online_enabled=False
     )
 
@@ -125,7 +125,7 @@ def main():
         version=1,
         primary_key=["station_id"],
         event_time="date",
-        description="Daily PM2.5 observations"
+        description="Daily PM2.5 observations",
         online_enabled=False
     )
 
