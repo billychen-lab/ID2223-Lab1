@@ -2,9 +2,9 @@
 
 ## Project Info
 
-- **Course**: ID2223 – Scalable Machine Learning and Deep Learning Systems  
+- **Course**: ID2223 – Scalable Machine Learning and Deep Learning   
 - **Lab**: Lab 1 – Air Quality Prediction Service  
-- **Student**: TODO: Your name, KTH ID  
+- **Student**: TODO: Yunquan Chen(yunquan@kth.se),  Sibo Zhang(siboz@kth.se) 
 - **GitHub repository**: TODO: link to this repo  
 - **Dashboard URL**: TODO: public URL of the `site/` folder (e.g. GitHub Pages)
 
