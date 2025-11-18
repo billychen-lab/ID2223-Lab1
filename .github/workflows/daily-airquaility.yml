@@ -2,7 +2,7 @@ name: daily-feature-pipeline
 
 on:
   schedule:
-    - cron: "0 5 * * *"   # 每天 05:00 UTC 运行（你可以改）
+    - cron: '*/1 * * * *'   # 每天 05:00 UTC 运行（你可以改）
   workflow_dispatch:       # 支持手动运行
 
 jobs:
@@ -28,4 +28,4 @@ jobs:
         env:
           HOPSWORKS_API_KEY: ${{ secrets.HOPSWORKS_API_KEY }}
         run: |
-          python 01_write_feature_groups.py
+          python daily pipeline.py
