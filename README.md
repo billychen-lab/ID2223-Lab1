@@ -4,9 +4,9 @@
 
 - **Course**: ID2223 – Scalable Machine Learning and Deep Learning   
 - **Lab**: Lab 1 – Air Quality Prediction Service  
-- **Student**: TODO: Yunquan Chen(yunquan@kth.se),  Sibo Zhang(siboz@kth.se) 
-- **GitHub repository**: TODO: link to this repo  
-- **Dashboard URL**: TODO: public URL of the `site/` folder (e.g. GitHub Pages)
+- **Student**: Yunquan Chen(yunquan@kth.se),  Sibo Zhang(siboz@kth.se) 
+- **GitHub repository**: https://github.com/billychen-lab/ID2223-Lab1/tree/main  
+- **Dashboard URL**: https://teal-custard-82b5f9.netlify.app
 
 ---
 
