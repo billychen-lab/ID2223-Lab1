@@ -83,7 +83,7 @@ def get_weather(lat, lon):
 # main
 # --------------------------
 def main():
-    print("🌤  Logging in to Hopsworks ...")
+    print("  Logging in to Hopsworks ...")
     project = hopsworks.login(api_key_value=HOPSWORKS_API_KEY)
     fs = project.get_feature_store()
 
@@ -91,7 +91,7 @@ def main():
     pm_rows = []
 
     for st in STATIONS:
-        print(f"⬇ Fetching: {st['station_id']}")
+        print(f"Fetching: {st['station_id']}")
 
         # ============= 1. 今日 PM2.5 =============
         pm_df = get_pm25_today(st["api_id"])
@@ -109,7 +109,7 @@ def main():
     # -------------------------
     # 写入 Feature Store
     # -------------------------
-    print("⬆ Uploading to Hopsworks ...")
+    print(" Uploading to Hopsworks ...")
 
     weather_fg = fs.get_or_create_feature_group(
         name="weather_daily_forecast",
@@ -132,7 +132,7 @@ def main():
     weather_fg.insert(weather_df_all, write_options={"wait_for_job": True})
     aq_fg.insert(pm_df_all, write_options={"wait_for_job": True})
 
-    print("🎉 Done! Daily pipeline completed.")
+    print(" Done! Daily pipeline completed.")
 
 
 if __name__ == "__main__":
