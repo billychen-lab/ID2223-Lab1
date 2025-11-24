@@ -5,7 +5,7 @@ import datetime
 import hopsworks
 
 # --------------------------
-# 配置：香港五个监测站（已按你给的 ID）
+# 
 # --------------------------
 STATIONS = [
     {"station_id": "hk-tuen-mun",    "api_id": 3928, "lat": 22.394984, "lon": 113.973140},
@@ -16,7 +16,7 @@ STATIONS = [
 ]
 
 # --------------------------
-# 读取 AQICN Token
+#  AQICN Token
 # --------------------------
 AQICN_TOKEN = os.environ["AQICN_API_KEY"]  # GitHub Secrets 或 Hopsworks Secrets 导入
 HOPSWORKS_API_KEY = os.environ["HOPSWORKS_API_KEY"]
@@ -25,7 +25,7 @@ FORECAST_DAYS = 7  # 未来 7 天天气预报
 
 
 # --------------------------
-# 函数：获取今日 PM2.5（实时 API）
+#  PM2.5（
 # --------------------------
 def get_pm25_today(api_id):
     url = f"https://api.waqi.info/feed/@{api_id}/?token={AQICN_TOKEN}"
@@ -49,7 +49,7 @@ def get_pm25_today(api_id):
 
 
 # --------------------------
-# 函数：获取天气（昨天 + 今天 + 未来7天）
+# weather
 # --------------------------
 def get_weather(lat, lon):
     today = datetime.date.today()
@@ -80,7 +80,7 @@ def get_weather(lat, lon):
 
 
 # --------------------------
-# 主流程
+# main
 # --------------------------
 def main():
     print("🌤  Logging in to Hopsworks ...")
